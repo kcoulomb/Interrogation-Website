@@ -1,0 +1,135 @@
+@font-face{
+	font-family: 'stowe';
+	src: url('Extras/stowe_font.ttf') format('truetype');
+}
+
+body {
+	background-color: rgb(20, 20, 20);
+}
+
+img {
+	width: 8em;
+	padding-right: 1em;
+	float: left;
+}
+
+#parent {
+	display: flex;
+	padding: 0 0.8em 1em 0.8em;
+}
+
+.bio {
+	padding: 2em;
+}
+
+.video {
+	float: left;
+	padding-right: 0.5em;
+}
+
+.white_font {
+	font-family: 'stowe';
+	color: white;
+}
+
+.title {
+	padding-bottom: .2em;
+	font-size: 5em;
+	text-align: center;
+}
+
+.small_title {
+	padding-top: .2em;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+.info {
+	padding-bottom: 1em;
+}
+
+.about{
+	display: table;
+	width: 100%;
+}
+
+.post {
+	background-color: rgba(51, 51, 51, 0.8);
+	color: white;
+
+	padding: .5em .5em;
+	flex: 1;
+}
+
+.post_bar {
+	background-color: rgb(100, 100, 100);
+	width: 3.5em;
+	border-right: solid rgb(20, 20, 20);
+}
+
+.vertical_text {
+	padding-left: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	word-wrap: break-word;
+	font-size: 1em;
+}
+
+.menu_container_inner {
+	background-color: rgba(0, 102, 204, 0.5);
+	padding: .3em 0;
+}
+
+.contact_name{
+	font-size: 1.3em;
+}
+
+.contact_title{
+	color: rgb(150, 150, 150);
+}
+
+.side-by-side{
+	display: inline-block;
+}
+
+a:link {
+	color: white;
+	text-decoration: none
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: rgba(31, 31, 31, 0.8);
+}
+
+ul.horizontal_menu {
+	text-align: center;
+	border-top: solid rgba(31, 31, 31, 0.8);
+	border-bottom: solid rgba(31, 31, 31, 0.8);
+}
+
+ul.horizontal_menu li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 8em;
+}
+
+nav#menu.scrolled {
+	position: fixed;
+	top: -12;
+	width: 99%;
+}
+
+nav#menu.scrolled ul.horizontal_menu li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 8em;
+}
+
+nav#menu ul.menu_container_inner {
+	background-color: rgba(0, 102, 204, 0.5);
+	padding: .3em 0;
+}
