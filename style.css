@@ -92,6 +92,11 @@ img {
 	display: inline-block;
 }
 
+.post_link {
+	padding: 0.2em 2em;
+	border: solid rgb(15, 15, 15);
+}
+
 a:link {
 	color: white;
 	text-decoration: none
