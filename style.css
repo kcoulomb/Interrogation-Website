@@ -4,7 +4,8 @@
 }
 
 body {
-	background-color: rgb(20, 20, 20);
+	background-image: url('Extras/Images/bg.jpg');
+	background-attachment: fixed;
 }
 
 img {
