@@ -1,6 +1,20 @@
+/*@font-face{*/
+	/*font-family: 'stowe';*/
+	/*src: url('Extras/stowe_font.ttf') format('truetype');*/
+/*}*/
+
 @font-face{
-	font-family: 'stowe';
-	src: url('Extras/stowe_font.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: url('Extras/Ubuntu.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'anon';
+	src: url('Extras/anon.ttf') format('truetype');
+}
+
+*{
+	font-family: 'Ubuntu';
 }
 
 body {
@@ -9,6 +23,7 @@ body {
 }
 
 img#teampic {
+    border-radius: 5px;
 	width: 8em;
 	padding-right: 1em;
 	float: left;
@@ -34,11 +49,12 @@ img#intpic {
 }
 
 .white_font {
-	font-family: 'stowe';
+	font-family: 'Ubuntu';
 	color: white;
 }
 
 .title {
+	font-family: 'anon';
 	padding-bottom: .2em;
 	font-size: 5em;
 	text-align: center;
@@ -55,11 +71,14 @@ img#intpic {
 }
 
 .about{
+
 	display: table;
 	width: 100%;
 }
 
 .post {
+
+    border-radius: 5px;
 	background-color: rgba(51, 51, 51, 0.8);
 	color: white;
 
@@ -67,18 +86,39 @@ img#intpic {
 	flex: 1;
 }
 
+.contact_box{
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+
+    padding: .5em .5em;
+    flex: 1;
+}
+
 .post_bar {
+    border-radius: 5px;
 	background-color: rgb(100, 100, 100);
 	width: 4.8em;
 	border-right: solid rgb(20, 20, 20);
 }
 
 .vertical_text {
+    text-align: right;
 	padding-left: 0.2em;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	word-wrap: break-word;
 	font-size: 1em;
+    transform: rotate(-90deg);
+    transform-origin: 66% 66%;
+    /*transform: translateX(50px);*/
+}
+
+.team_member_pictures{
+    padding-left: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    word-wrap: break-word;
+    font-size: 1em;
 }
 
 .menu_container_inner {
