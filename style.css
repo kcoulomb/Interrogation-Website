@@ -1,8 +1,3 @@
-/*@font-face{*/
-	/*font-family: 'stowe';*/
-	/*src: url('Extras/stowe_font.ttf') format('truetype');*/
-/*}*/
-
 @font-face{
 	font-family: 'Ubuntu';
 	src: url('Extras/Ubuntu.ttf') format('truetype');
@@ -18,7 +13,7 @@
 }
 
 body {
-	background-image: url('Extras/Images/bg.jpg');
+	background-color: #1E1F26;
 	background-attachment: fixed;
 }
 
@@ -68,62 +63,48 @@ img#intpic {
 
 .info {
 	padding-bottom: 1em;
+	font-size: 1.3em;
 }
 
 .about{
-
 	display: table;
 	width: 100%;
 }
 
 .post {
-
     border-radius: 5px;
-	background-color: rgba(51, 51, 51, 0.8);
-	color: white;
-
-	padding: .5em .5em;
-	flex: 1;
+	border: solid #172544;
+	font-size: 1.3em;
+	text-align: center;
 }
 
-.contact_box{
-    background-color: rgba(51, 51, 51, 0.8);
+.box-standards{
+	background-color: #283655;
     color: white;
-
     padding: .5em .5em;
     flex: 1;
 }
 
 .post_bar {
     border-radius: 5px;
-	background-color: rgb(100, 100, 100);
-	width: 4.8em;
-	border-right: solid rgb(20, 20, 20);
+    border-right: solid #777777;
+	background-color: #D0E1F9;
+	width: 6em;
 }
 
 .vertical_text {
     text-align: right;
-	padding-left: 0.2em;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
 	word-wrap: break-word;
-	font-size: 1em;
+	font-size: 1.5em;
     transform: rotate(-90deg);
     transform-origin: 66% 66%;
-    /*transform: translateX(50px);*/
 }
 
 .team_member_pictures{
-    padding-left: 0.2em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    padding: 0.2em 0 0.2em 0.2em;
     word-wrap: break-word;
     font-size: 1em;
-}
-
-.menu_container_inner {
-	background-color: rgba(0, 102, 204, 0.5);
-	padding: .3em 0;
 }
 
 .contact_name{
@@ -156,31 +137,33 @@ a:active {
 	color: rgba(31, 31, 31, 0.8);
 }
 
+.horizontal_menu {
+	font-size: 2em;
+	background-color: #283655;
+	border: solid #172544;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
 ul.horizontal_menu {
-	text-align: center;
-	border-top: solid rgba(31, 31, 31, 0.8);
-	border-bottom: solid rgba(31, 31, 31, 0.8);
+	list-style: none;
 }
 
 ul.horizontal_menu li {
-	display: inline-block;
-	margin: 0 auto;
-	padding: 0 8em;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+nav#menu {
+	background-color: #1E1F26;
+	background-attachment: fixed;
 }
 
 nav#menu.scrolled {
 	position: fixed;
-	top: -12;
+	top: -27;
 	width: 99%;
-}
-
-nav#menu.scrolled ul.horizontal_menu li {
-	display: inline-block;
-	margin: 0 auto;
-	padding: 0 8em;
-}
-
-nav#menu ul.menu_container_inner {
-	background-color: rgba(0, 102, 204, 0.5);
-	padding: .3em 0;
 }
